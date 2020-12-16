@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    padding-top: 0;
+    font-family: Helvetica Neue, Helvetica;
+    background: #f7f7f7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form {
+    padding: 0 40px;
 }
 
-.App-link {
-  color: #61dafb;
+form input {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form button {
+    display: block;
+    width: 100%;
+    appearance: none;
+    border-radius: 5px;
+    background-color: #84c00c;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background-color: #669509;
+}
+
+form button:disabled {
+    background-color: #dbf99f;
+    color: #333;
+}
+.btn_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btn_block button {
+    margin: 20px;
 }
